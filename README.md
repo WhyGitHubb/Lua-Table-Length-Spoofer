@@ -1,6 +1,6 @@
 # Lua-Array-Length-Spoofer or Lua-Table-Length-Spoofer
 
-such wow
+this is stupid but I make stupid things so.
 
 # usage
 
