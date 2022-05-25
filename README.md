@@ -1,6 +1,6 @@
 # Lua-Array-Length-Spoofer or Lua-Table-Length-Spoofer
 
-poopy fard
+such wow
 
 # usage
 
@@ -51,4 +51,4 @@ print(#exampleTable) -- 0
 print(#exampleTable1) -- 0
 ```
 
-I dont know where this would be used for or if this is even useful at all since you can always get the real length by using pairs(), but I thought this Lua **"feature"** was cool and decided to make something with it. 
+I dont know where this would be used for or if this is even useful at all since you can always edit the __len metamethod and you can get the real length by using pairs(), but I thought this Lua **"feature"** was cool and decided to make something with it. 
