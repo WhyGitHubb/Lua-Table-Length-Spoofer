@@ -1,5 +1,15 @@
 # Lua-Array-Length-Spoofer or Lua-Table-Length-Spoofer
-this is stupid, but I make stupid things so why not
+
+poopy fard
+
+# usage
+
+```
+yourtable = {"your string",1,2,3}
+print(#yourtable) -- your table length is 4
+spoofTable(yourtable)
+print(#yourtable) -- your table length is 0, such wow
+```
 
 # how it works
 
@@ -10,10 +20,10 @@ print(#{1,2,3,"4"}) -- prints 4
 but it gets wonky when I do this
 ```
 print(#{nil,nil,nil,nil,1,2,3,"4",nil}) -- prints 0
-print(#{nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,2,3,"4",nil}) -- prints 0, you can put as much nil values as you want, as long as it has a nil value on the final index
+print(#{nil,nil,nil,nil,nil,nil,nil,nil,nil,nil,1,2,3,"4",nil}) -- prints 0, you can put as much nil values as you want, as long as it is greater than or equal to the initial table length and has a nil value on the final index
 print(#{nil,nil,nil,1,2,3,"4",nil}) -- prints 7 cuz the number of nil values is less than the initial table lenght
 ```
-so obviously something isnt right here and for some reason it prints 0, this will only happen by inserting nil values in the table equal to or greater than the initial table lenght, then you insert a final nil value on the last index.
+so obviously something isnt right here and for some reason it prints 0...
 
 and so I abused this Lua **"feature"** to create a table length spoofer
 ```
@@ -41,4 +51,4 @@ print(#exampleTable) -- 0
 print(#exampleTable1) -- 0
 ```
 
-I dont know where this would be used for but it is really interesting for me, 
+I dont know where this would be used for or if this is even useful at all since you can always get the real length by using pairs(), but I thought this Lua **"feature"** was cool and decided to make something with it. 
